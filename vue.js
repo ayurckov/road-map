@@ -22,9 +22,6 @@ const App = {
         this.curentStep--
       }
     },
-    reset() {
-      // начать заного
-    },
     nextOfFinish() {
       // кнопка вперед или закончить
       // if(this.curentStep !== 4) {
@@ -41,6 +38,7 @@ const App = {
     },
     setActive(idx) {
       // когда нажимаем на определенный шаг
+      this.curentStep = idx;
     }
   },
   computed: {
